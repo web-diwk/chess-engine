@@ -80,7 +80,7 @@ const MinMax = (
     //   scoreToSend,
     //   scoresAndMoves[scoreToSend]
     // );
-    // console.log("\n\n\n");
+// console.log("\n\n\n");
     // if (Object.keys(scoresAndMoves).length === 0)
     //   return { score: -bestScoreYet, moveToMake: new fromTo(-1, -1, -1, -1) };
     return { score: bestScoreYet, moveToMake: bestMoveYet };

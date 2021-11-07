@@ -1,9 +1,6 @@
 import { Piece } from "./Piece";
 import { initiallyCanMoveTo } from "./InitialPosition";
 
-// TODO:
-// Stalemate
-
 // Done:
 // Ban illegal moves
 // en passant
@@ -15,17 +12,17 @@ export const valueOfPiece = (
 ) => {
   switch (type) {
     case "King":
-      return 1000;
+      return 1500;
     case "Rook":
-      return 100;
-    case "Knight":
-      return 150;
-    case "Bishop":
-      return 100;
-    case "Pawn":
-      return 30;
-    case "Queen":
       return 500;
+    case "Knight":
+      return 300;
+    case "Bishop":
+      return 300;
+    case "Pawn":
+      return 100;
+    case "Queen":
+      return 900;
   }
 };
 

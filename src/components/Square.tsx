@@ -14,7 +14,7 @@ const Square: React.FC<Props> = (props) => {
   let background = "rgb(208, 139, 76)";
   let color = "white";
 
-  if ((props.i + props.k) % 2 == 0) {
+  if ((props.i + props.k) % 2 ===  0) {
     background = "rgb(254, 206, 161)";
     color = "black";
   }

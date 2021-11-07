@@ -6,12 +6,12 @@ export class Piece {
     this.type = type;
     this.color = color;
     const multiplier = color === "W" ? 1 : -1;
-    if (type === "King") this.importance = 10000 * multiplier;
-    else if (type === "Queen") this.importance = 1000 * multiplier;
-    else if (type === "Knight") this.importance = 200 * multiplier;
-    else if (type === "Rook") this.importance = 150 * multiplier;
-    else if (type === "Bishop") this.importance = 150 * multiplier;
-    else this.importance = 50 * multiplier;
+    if (type === "King") this.importance = 1500 * multiplier;
+    else if (type === "Queen") this.importance = 900 * multiplier;
+    else if (type === "Knight") this.importance = 300 * multiplier;
+    else if (type === "Rook") this.importance = 500 * multiplier;
+    else if (type === "Bishop") this.importance = 300 * multiplier;
+    else this.importance = 100 * multiplier;
   }
 
   type: String = "";

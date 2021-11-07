@@ -127,7 +127,7 @@ export const PawnScore = (i: number, j: number, Board: (Piece | any)[][]) => {
       }
       */
     }
-  }
+}
   importance *= turn === "W" ? 1 : -1;
   Board[i][j].importance = importance;
 };
