@@ -6,6 +6,7 @@ import "./App.css";
 const App: React.FC = () => {
   return (
     <main className="app">
+      <h1 >Chess-Engine</h1>
       <Board />
     </main>
   );

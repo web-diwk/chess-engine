@@ -11,11 +11,11 @@ interface Props {
 }
 
 const Square: React.FC<Props> = (props) => {
-  let background = "rgb(208, 139, 76)";
+  let background = "rgb(195, 222, 193 )";
   let color = "white";
 
   if ((props.i + props.k) % 2 ===  0) {
-    background = "rgb(254, 206, 161)";
+    background = "rgb(16, 120, 8)";
     color = "black";
   }
   const handleClick = () => {
