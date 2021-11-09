@@ -12,17 +12,17 @@ export const valueOfPiece = (
 ) => {
   switch (type) {
     case "King":
-      return 1500;
+      return 1000;
     case "Rook":
-      return 500;
-    case "Knight":
-      return 300;
-    case "Bishop":
-      return 300;
-    case "Pawn":
       return 100;
+    case "Knight":
+      return 150;
+    case "Bishop":
+      return 100;
+    case "Pawn":
+      return 30;
     case "Queen":
-      return 900;
+      return 500;
   }
 };
 
