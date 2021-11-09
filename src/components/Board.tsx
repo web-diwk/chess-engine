@@ -110,6 +110,10 @@ const Board: React.FC = () => {
         alert("CheckMate! You defeated the AI :)");
         return;
       }
+      if(scoreToSend === -100000) {
+        alert("CheckMate! You have been defeated by AI ");
+        return;
+      }
       console.log(scoreToSend, moveToMake);
       setBoard((previousBoard) => {
         let newBoard = previousBoard.map((inner) => inner.slice());

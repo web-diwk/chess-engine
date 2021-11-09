@@ -644,6 +644,7 @@ export const Pawn = (
   // console.log(i, j, Board, turn);
   if (turn === "W") {
     // if turn is white, pawns move up.
+    if(i!== 0)
     if (Board[i - 1][j] === null) {
       let newBoard = Board.map((inner) => inner.slice());
       newBoard[i - 1][j] = Board[i][j];
@@ -664,7 +665,10 @@ export const Pawn = (
     }
 
     if (j !== 0) {
-      const upLeft = Board[i - 1][j - 1];
+
+      var upLeft = null;
+      if(i!== 0)
+        upLeft = Board[i - 1][j - 1];
       const left = Board[i][j - 1];
       if (upLeft !== null) {
         if (upLeft.color === "B") {
@@ -693,7 +697,10 @@ export const Pawn = (
       }
     }
     if (j !== 7) {
-      const upRight = Board[i - 1][j + 1];
+      
+      var upRight = null
+      if( i!==0)
+        upRight = Board[i - 1][j + 1];
       const right = Board[i][j + 1];
       if (upRight !== null) {
         if (upRight.color === "B") {
